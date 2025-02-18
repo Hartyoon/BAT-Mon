@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Log"
+        android:id="@+id/log"
+        android:icon="@drawable/baseline_description_24"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:title="Einstellungen"
+        android:id="@+id/settings"
+        android:icon="@drawable/baseline_settings_24"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:title="Startseite"
+        android:id="@+id/home_button"
+        android:icon="@drawable/baseline_home_24"
+        app:showAsAction="ifRoom"
+        />
+</menu>

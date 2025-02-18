@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrontEnd.Login_Page">
+
+    <com.example.bat_mon.FrontEnd.CustomWidgets.BatMonToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/TextPassword"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:autofillHints="@string/PasswordEmpty"
+                android:background="#FFFFFF"
+                android:backgroundTint="#4E5DAC"
+                android:ems="10"
+                android:hint="@string/PasswordEmpty"
+                android:inputType="textPassword"
+                android:labelFor="@id/Login_Button"
+                android:screenReaderFocusable="false"
+                android:textAlignment="center"
+                android:textColor="#F8F8F8"
+                android:textColorHint="#E5E0E0"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="32dp" />
+
+            <Button
+                android:id="@+id/Login_Button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:fontFamily="casual"
+                android:text="@string/Login_Button"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:background="?attr/colorPrimary"
+                android:onClick="login"
+                app:layout_constraintTop_toBottomOf="@+id/TextPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginHorizontal="64dp"
+                android:layout_marginTop="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

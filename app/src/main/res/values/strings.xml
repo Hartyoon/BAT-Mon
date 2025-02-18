@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BAT-Mon</string>
+    <string name="Login_Button">Login</string>
+    <string name="PasswordEmpty">Password</string>
+    <string name="SettingTitel">Settings</string>
+    <string name="DarkMode">Dark Mode</string>
+    <string name="Email1">Email 1:</string>
+    <string name="Email2">Email 2:</string>
+    <string name="Phone1"> Phone 1:</string>
+    <string name="Phone2">Phone 2:</string>
+    <string name="HintEmail">Email Address</string>
+    <string name="HintPhone">Phone Number</string>
+    <string name="Segment1">1</string>
+    <string name="Segment2">2</string>
+    <string name="Segment3">3</string>
+    <string name="Segment4">4</string>
+    <string name="Segment5">5</string>
+    <string name="Segment6">6</string>
+    <string name="Segment7">7</string>
+    <string name="Segment8">8</string>
+    <string name="Segment9">9</string>
+    <string name="Segment10">10</string>
+    <string name="Segment11">11</string>
+    <string name="Segment12">12</string>
+    <string name="HeadPassFail">Segment Overview</string>
+    <string name="start">Start!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Graph time span drop down -->
+    <string-array name="timeSpanDropDown">
+        <item>1 Minute</item>
+        <item>2 Minutes</item>
+        <item>5 Minutes</item>
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+        <item>5 Hours</item>
+        <item>12 Hours</item>
+        <item>24 Hours</item>
+    </string-array>
+</resources>

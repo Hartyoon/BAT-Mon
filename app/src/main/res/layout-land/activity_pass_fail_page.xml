@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FrontEnd.Pass_Fail_Page">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.example.bat_mon.FrontEnd.CustomWidgets.BatMonToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.15"
+                android:autoSizeMaxTextSize="50sp"
+                android:autoSizeTextType="uniform"
+                android:text="@string/HeadPassFail"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/segment1"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/rub_green"
+                    android:onClick="openCID"
+                    android:text="@string/Segment1"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment2"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment2"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment3"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment3"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment4"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment4"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/segment5"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment5"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment6"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment6"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment7"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment7"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment8"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/segment9"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment9"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment10"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment10"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment11"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment11"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:id="@+id/segment12"
+                    style="@android:style/Holo.ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:onClick="openCID"
+                    android:text="@string/Segment12"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
